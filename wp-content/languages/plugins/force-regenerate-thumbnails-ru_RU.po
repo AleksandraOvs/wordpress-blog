@@ -1,0 +1,147 @@
+# Translation of Plugins - Force Regenerate Thumbnails - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Force Regenerate Thumbnails - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-12-25 11:49:04+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Force Regenerate Thumbnails - Stable (latest release)\n"
+
+#: class-forceregeneratethumbnails.php:244
+msgid "Regenerate the thumbnails for this single image"
+msgstr "Пересоздать миниатюры для этого изображения"
+
+#: class-forceregeneratethumbnails.php:356
+#: class-forceregeneratethumbnails.php:397
+msgid "You must enable Javascript in order to proceed!"
+msgstr "Чтобы продолжить, вы должны включить Javascript в браузере!"
+
+#: class-forceregeneratethumbnails.php:148
+msgid "Stopping..."
+msgstr "Остановка..."
+
+#. translators: %d: the total number of images
+#: class-forceregeneratethumbnails.php:368
+msgid "Total: %s"
+msgstr "Итого: %s"
+
+#: class-forceregeneratethumbnails.php:512
+msgid "The originally uploaded image file cannot be found."
+msgstr "Оригинал не найден."
+
+#. Description of the plugin
+msgid "Delete and REALLY force the regenerate thumbnail."
+msgstr "Удалить и ДЕЙСТВИТЕЛЬНО пересоздать миниатюру."
+
+#: class-forceregeneratethumbnails.php:363
+msgid "Process Information"
+msgstr "Информация о процессе"
+
+#. translators: %d: the number of regeneration failures
+#: class-forceregeneratethumbnails.php:374
+msgid "Failure: %s"
+msgstr "Неудачно: %s"
+
+#. translators: %d: the number of successfully regenerated images
+#: class-forceregeneratethumbnails.php:371
+msgid "Success: %s"
+msgstr "Успешно: %s"
+
+#. Plugin Name of the plugin
+#: class-forceregeneratethumbnails.php:70
+#: class-forceregeneratethumbnails.php:71
+#: class-forceregeneratethumbnails.php:244
+#: class-forceregeneratethumbnails.php:266
+#: class-forceregeneratethumbnails.php:335
+msgid "Force Regenerate Thumbnails"
+msgstr "Force Regenerate Thumbnails"
+
+#: class-forceregeneratethumbnails.php:361
+msgid "Abort Process"
+msgstr "Прервать процесс"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/force-regenerate-thumbnails/"
+msgstr "https://wordpress.org/plugins/force-regenerate-thumbnails/"
+
+#. Author of the plugin
+msgid "Exactly WWW"
+msgstr "Exactly WWW"
+
+#. Author URI of the plugin
+msgid "http://ewww.io/about/"
+msgstr "http://ewww.io/about/"
+
+#. translators: 1: attachment title 2: attachment ID number
+#: class-forceregeneratethumbnails.php:683
+msgid "%1$s (ID %2$d)"
+msgstr "%1$s (ID %2$d)"
+
+#. translators: %s: the full path of the image
+#: class-forceregeneratethumbnails.php:694
+msgid "Image: %s"
+msgstr "Изображение: %s"
+
+#. translators: %d: the attachment ID number
+#: class-forceregeneratethumbnails.php:915
+msgid "(ID %d)"
+msgstr "(ID %d)"
+
+#: class-forceregeneratethumbnails.php:100
+#: class-forceregeneratethumbnails.php:343
+msgid "Access denied."
+msgstr "Доступ запрещён."
+
+#: class-forceregeneratethumbnails.php:149
+msgid "Unknown error occured."
+msgstr "Произошла неизвестная ошибка."
+
+#: class-forceregeneratethumbnails.php:324
+msgid "All done!"
+msgstr "Всё готово!"
+
+#: class-forceregeneratethumbnails.php:326
+msgid "Go back to the previous page."
+msgstr "Вернуться на предыдущую страницу."
+
+#: class-forceregeneratethumbnails.php:330
+msgid "Retry Failed Images"
+msgstr "Повторить неудачные изображения"
+
+#: class-forceregeneratethumbnails.php:349
+msgid "You do not appear to have uploaded any images or PDF files yet."
+msgstr "Похоже, вы еще не загрузили изображения или PDF-файлы."
+
+#: class-forceregeneratethumbnails.php:354
+msgid "Please be patient while the thumbnails are regenerated. Details will be displayed below as each image is completed."
+msgstr "Будьте терпеливы, пока миниатюры регенерируются. Подробная информация будет отображаться ниже по мере завершения каждого изображения."
+
+#: class-forceregeneratethumbnails.php:389
+msgid "All Thumbnails"
+msgstr "Все миниатюры"
+
+#: class-forceregeneratethumbnails.php:392
+msgid "You may regenerate thumbnails for all images that you have uploaded to your blog."
+msgstr "Вы можете регенерировать эскизы для всех изображений, которые вы загрузили в свой блог."
+
+#: class-forceregeneratethumbnails.php:393
+#: class-forceregeneratethumbnails.php:407
+msgid "Be sure to backup your site before you begin."
+msgstr "Перед началом работы обязательно создайте резервную копию своего сайта."
+
+#: class-forceregeneratethumbnails.php:398
+msgid "Regenerate All Thumbnails"
+msgstr "Регенерировать все миниатюры"
+
+#: class-forceregeneratethumbnails.php:402
+msgid "Specific Thumbnails"
+msgstr "Конкретные миниатюры"
+
+#. translators: %s: Media Library (link)
+#: class-forceregeneratethumbnails.php:406
+msgid "You may regenerate thumbnails for specific images from the %s in List mode."
+msgstr "Вы можете повторно генерировать эскизы для определенных изображений из %s в режиме списка."

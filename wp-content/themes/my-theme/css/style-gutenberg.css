@@ -1,0 +1,51 @@
+@import url('http://fonts.googleapis.com/css?family=Montserrat:300,400%7COpen+Sans:400,400i,700%7CMerriweather:400ii?subset=cyrillic');
+
+.wp-block{
+    max-width: 769px;
+}
+
+body{
+    font-family: 'Open Sans', serif;
+    color:#343434;
+    font-size:14px;
+    line-height:25px;
+}
+
+.has-drop-cap:not(:focus):first-letter {
+    float: left;
+    color: #c0945c;
+    font-size: 48px;
+    font-weight:700;
+    line-height: 36px;
+    padding-right: 5px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.editor-post-title__input, h2, h3, h4, h5{
+    font-family: 'Montserrat', sans-serif;
+    margin-top:0;
+    color:#000;
+    -webkit-font-smoothing: auto;
+    line-height:1.5;
+}
+
+.editor-post-title__input{
+    text-align:center;
+    text-transform:uppercase;
+}
+
+h2{
+    font-size:36px;
+}
+
+h3{
+    font-size:28px;
+}
+
+h4{
+    font-size:24px;
+}
+
+h5{
+    font-size:20px;
+}
