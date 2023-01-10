@@ -1,4 +1,8 @@
-<?php get_header(); the_post();?>
+<?php
+  $post_views = get_post_meta(get_the_ID(), 'views', true);
+  $post_views++;
+  update_post_meta(get_the_ID(), 'views', $post_views);
+  get_header(); the_post();?>
 <div class="content-wrapper oh">
 
 <!-- Content -->

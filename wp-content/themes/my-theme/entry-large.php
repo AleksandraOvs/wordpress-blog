@@ -8,7 +8,6 @@
                 </h2>
               </div>
               
-           
               <?php if(has_post_thumbnail()) : ?>
                 <div class="entry-img">
                   <a href="<?php the_permalink() ?>">
@@ -35,11 +34,18 @@
                         <li class="entry-comments">
                         <a href="<?php the_permalink() ?>#comments"><?php comments_number() ?></a>
                         </li>
+                        <li class="entry-views">
+                          <?php
+                          $post_views = get_post_meta(get_the_ID(), 'views', true);
+                          if ($post_views){
+                            echo $post_views . ' ' . true_wordform($post_views, 'просмотр', 'просмотра', 'просмотров');
+                          } else{
+                            echo 'Просмотров нет';
+                          }
+                          ?>
+                        </li>
                       </ul>
-
-
                     </div>
-
                   </div>
                 </div>
               </article> <!-- end large post -->
