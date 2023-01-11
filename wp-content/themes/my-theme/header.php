@@ -41,7 +41,7 @@
         <i class="icon icon_close search-close" id="search-close"></i>
       </div> <!-- end fullscreen search -->
 
-      <nav class="navbar navbar-fixed-top">
+      <nav class="navbar <?php echo (true !== get_theme_mod('my_theme_fixed_header') ? '' : 'navbar-fixed-top') ?> " >
         <div class="navigation">
           <div class="container relative">
 

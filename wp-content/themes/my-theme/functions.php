@@ -301,3 +301,72 @@ function true_wordform($num, $form_for_1, $form_for_2, $form_for_5){
 		return $form_for_1;
 	return $form_for_5;
 }
+//подключение js для динамического просмотра настроек 
+	add_action ('customize_preview_init', 'my_theme_customizer_live');
+
+	function my_theme_customizer_live(){
+		wp_enqueue_script(
+			'my_theme-customizer', // любое название скрипта
+			get_stylesheet_directory_uri() . '/js/theme-customizer.js', //URL
+			array('jquery', 'customizer-preview'), //зависимость от jquery
+			null, // версия не задана
+			true // подключать в футере
+		);
+	}
+
+
+//Theme Customizer
+
+add_action ('customize_register', 'theme_customizer_init');
+
+function theme_customizer_init( $wp_customize){
+
+	$wp_customize->add_panel (
+		'my_theme_panel',
+		array (
+			'priority' => 40,
+			'title' => 'Внешний вид сайта',
+			'description' => 'Тут можно настроить внешний вид сайта',
+	));
+//header
+	$wp_customize->add_section(
+		'my_theme_header_section',
+		array(
+			'title' => 'Шапка сайта',
+			'priority' => 1,
+			'description' => 'Тут можно настроить шапку сайта',
+			'panel' => 'my_theme_panel'
+		)
+	);
+	$wp_customize->add_setting(
+			'my_theme_fixed_header',
+			array(
+				'default' => true, //для чекбокса значения по умолчанию true/false
+				//'transport' => 'postMessage' //refresh
+			)
+	);
+	$wp_customize->add_control(
+			'my_theme_fixed_header',
+			array(
+				'section' => 'my_theme_header_section',
+				'label' => 'Фиксированная шапка',
+				'type' => 'checkbox'
+			)
+		);
+//footer
+	$wp_customize->add_section(
+		'my_theme_footer_section',
+		array(
+			'title' => 'Подвал сайта',
+			'priority' => 2,
+			'description' => 'Тут можно настроить gjldfk сайта',
+			'panel' => 'my_theme_panel'
+		)
+	);
+
+	
+
+	
+	
+
+}
